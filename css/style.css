@@ -1,9 +1,3 @@
-/*
- * Author by FreeHTML5.co
- * Twitter: https://twitter.com/fh5co
- * Facebook: https://fb.com/fh5co
- * URL: https://freehtml5.co
- */
 /* Fonts */
 @font-face {
   font-family: 'Calisto-MT';
@@ -217,7 +211,13 @@
   @media (max-width: 520px) {
     .top-banner__inner {
       flex-direction: column; } }
-
+.top-banner__image img {
+  width: 100%;            /* Ensures the image takes up the full width of its container */
+  max-width: 600px;       /* Sets the maximum width of the image */
+  height: auto;           /* Maintains the aspect ratio */
+  object-fit: cover;      /* Ensures the image covers the container without distortion */
+}
+    
 .brand-span {
   font-size: 14px;
   color: #c18f59; }
