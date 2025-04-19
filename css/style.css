@@ -138,7 +138,6 @@
 .fh5co-top-banner {
   position: relative;
   display: flex;
-  margin-bottom: 0;
   align-items: flex-end;
   background-image: url("../images/top-banner-bckg.jpg");
   background-position: center;
@@ -157,7 +156,6 @@
 .fh5co-top-banner .site-container {
   position: relative;
   z-index: 1;
-  height: 90%;
 }
 @media (max-width: 1600px) {
   .fh5co-top-banner {
@@ -304,7 +302,6 @@
   position: relative;
   margin: 193px 0 199px;
 }
-
 @media (max-width: 1250px) {
   .fh5co-about-me {
     margin: 150px 0;
