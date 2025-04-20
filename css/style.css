@@ -16,7 +16,7 @@
 
 /* Colors */
 /* Universal style */
-* {object-fit
+* {
   margin: 0;
   padding: 0;
   font-family: "Calisto-MT";
@@ -136,8 +136,8 @@
 
 /* Top Banner */
 .fh5co-top-banner {
-  height:90vh;
-  min-height:90vh;
+  height:80vh;
+  min-height:80vh;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -287,7 +287,6 @@
   width: 100%;            /* Ensures the image takes up the full width of its container */
   max-width: 600px;       /* Sets the maximum width of the image */
   height: auto;           /* Maintains the aspect ratio */
-  block-size:clamp(250px,55vh,550px);
   object-fit: contain;
   max-height:85vh;
 }
