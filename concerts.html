@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concerts | Klajdi Cerriku</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .gallery-page {
+      padding: 120px 0 80px;
+      background: #eee;
+    }
+    .gallery-page h2 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    .gallery-grid {
+      /* force exactly 2 columns */
+      column-count: 2;
+      column-gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .gallery-item {
+      /* prevent splitting across columns */
+      break-inside: avoid;
+      margin-bottom: 1rem;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;       /* natural aspect ratio */
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      object-fit: cover;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* on very small screens, collapse to one column */
+    @media (max-width: 600px) {
+      .gallery-grid {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation (same as your other pages) -->
+  <nav class="site-navigation">
+    <div class="site-navigation-inner site-container">
+      <a href="index.html"><img src="./images/site-logo.png" alt="site logo"/></a>
+      <div class="main-navigation">
+        <ul class="main-navigation__ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biography.html">Biography</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="concerts.html">Concerts</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="lessons.html">Lessons</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-page">
+    <h2>Concerts</h2>
+    <div class="gallery-grid">
+      <!-- wrap each photo so column CSS applies -->
+      <div class="gallery-item">
+        <img src="concerts/IMG_6994.JPG" alt="Photo 1">
+      </div>
+      <div class="gallery-item">
+        <img src="concerts/Black Yellow Minimalist Opera Show Event Poster-4.PNG" alt="Photo 2">
+      </div>
+      <div class="gallery-item">
+        <img src="concerts/IMG_0654.JPG" alt="Photo 3">
+      </div>
+      <div class="gallery-item">
+        <img src="concerts/IMG_6970.JPG" alt="Photo 4">
+      </div>
+      <div class="gallery-item">
+        <img src="concerts/IMG_6967.JPG" alt="Photo 5">
+      </div>
+      <div class="gallery-item">
+        <img src="concerts/IMG_6964.JPG" alt="Photo 6">
+      </div>
+      <div class="gallery-item">
+        <img src="concerts/IMG_0703.JPG" alt="Photo 7">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as your other pages) -->
+  <footer class="site-footer">
+    <!-- … -->
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
